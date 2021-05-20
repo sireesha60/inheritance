@@ -1,0 +1,21 @@
+single inheritance
+--------------------------
+public class Veg {
+void wash() {
+	System.out.println("wash the vegetables before using");
+}
+}
+public class Carrot extends Veg {
+void chop() {
+	System.out.println("chop into small pieces");
+}
+void cook() {
+	System.out.println("fry the carrot in oil");
+}
+	public static void main(String[] args) {
+    Carrot c = new Carrot();
+    c.wash();
+    c.chop();
+    c.cook();
+	}
+}

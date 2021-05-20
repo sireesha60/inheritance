@@ -1,0 +1,31 @@
+Hierarchial inheritance
+---------------------------------
+
+public class Earth {
+void living() {
+	System.out.println("all the living beings live on earth");
+}
+}
+public class Human extends Earth {
+void walk() {
+	System.out.println("nick walks towards beach");
+	}
+}
+public class Bird extends Earth{
+void fly() {
+	System.out.println("eagle fly above the clouds ");
+}
+}
+public class Animal extends Earth{
+	void roam() {
+		System.out.println("animals roam all over the jungle");}
+	public static void main(String[] args) {
+Human h= new Human();
+Bird b= new Bird();
+Animal a= new Animal();
+h.walk();
+b.fly();
+a.roam();
+a.living();
+	}
+}

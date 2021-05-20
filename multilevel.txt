@@ -1,0 +1,23 @@
+multilevel inheritance
+---------------------------------
+public class Vehicle {
+void start() {
+	System.out.println("start the vehicle");
+}
+}
+public class Car extends Vehicle {
+void drive() {
+	System.out.println("Drive the car safely");
+}
+}
+public class Bicycle extends Car {
+	void ride() {
+		System.out.println("ride a bicycle by wearing a helmet");
+	}
+	public static void main(String[] args) {
+    Bicycle b= new Bicycle();
+    b.start();
+    b.drive();
+    b.ride();
+	}
+}

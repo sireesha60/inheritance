@@ -1,0 +1,31 @@
+public interface Techno {
+public void getType();
+public void getlatestVersion();
+public void getBasicSyntax();
+}
+public interface LatestWorkstations {
+public void getNew();
+}
+
+public class Eng implements Techno,LatestWorkstations,Trend
+{
+	public void getType() {
+		System.out.println("oracle");
+	}
+	public void getlatestVersion() {
+		System.out.println(" latest version is 19c ");
+	}
+	public void getBasicSyntax() {
+		System.out.println("syntax is create,pro_name,para_section");
+	}
+	public void getNew() {
+		System.out.println("get a newer version of oracle");
+	}
+	public static void main(String args[]) {
+		Eng e= new Eng();
+		 e. getType();
+		 e.getlatestVersion();
+		 e.getBasicSyntax();
+		 e.getNew();
+	}
+}
